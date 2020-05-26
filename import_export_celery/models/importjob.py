@@ -17,7 +17,7 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 from datetime import datetime
 
-# from author.decorators import with_author
+from author.decorators import with_author
 
 from django.conf import settings
 from django.db import models
@@ -31,7 +31,7 @@ from import_export.formats.base_formats import DEFAULT_FORMATS
 from ..tasks import run_import_job
 
 
-# @with_author
+@with_author
 class ImportJob(models.Model):
     file = models.FileField(
         verbose_name=_("File to be imported"),

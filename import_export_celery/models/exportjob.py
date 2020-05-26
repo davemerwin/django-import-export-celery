@@ -18,7 +18,7 @@
 from datetime import datetime
 import json
 
-# from author.decorators import with_author
+from author.decorators import with_author
 
 from django.conf import settings
 from django.contrib.contenttypes.models import ContentType
@@ -33,7 +33,7 @@ from import_export.formats.base_formats import DEFAULT_FORMATS
 from ..tasks import run_export_job
 
 
-# @with_author
+@with_author
 class ExportJob(models.Model):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
