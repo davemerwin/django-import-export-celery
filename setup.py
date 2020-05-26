@@ -13,9 +13,9 @@ version = subprocess.check_output(['git','describe','--abbrev=0','--tags']).deco
 setup(
         name='django-import-export-celery',
         version=version,
-        author='Timothy Hobbs',
+        author='Timothy Hobbs, Dave Merwin',
         author_email='timothy.hobbs@auto-mat.cz',
-        url='https://github.com/auto-mat/django-import-export-celery',
+        url='https://github.com/davemerwin/django-import-export-celery',
         download_url="http://pypi.python.org/pypi/django-import-export-celery/",
         description="Process long running django imports and exports in celery",
         long_description=codecs.open(
